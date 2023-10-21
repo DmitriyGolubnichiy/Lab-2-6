@@ -1,4 +1,3 @@
-
 import sqlite3
 import json
 
@@ -8,7 +7,7 @@ def get_all_users( json_str = False):
     cursor = conn.cursor()
     rows = cursor.execute('''
         SELECT *
-        FROM Application,Service,Client,Worker
+        FROM sqlite_master
         ''').fetchall()
     conn.commit()
     conn.close()
