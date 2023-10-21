@@ -1,4 +1,4 @@
-import codecs
+
 import sqlite3
 import json
 
